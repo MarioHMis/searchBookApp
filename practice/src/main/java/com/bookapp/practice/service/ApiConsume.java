@@ -1,4 +1,4 @@
-package com.stephenkingbooks.stephenkingbooks.service;
+package com.bookapp.practice.service;
 
 import java.io.IOException;
 import java.net.URI;
@@ -6,8 +6,10 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
-public class ApiConsuption {
-    public String getData(String url){
+public class ApiConsume {
+
+
+        public static String getData(String url) {
             HttpClient client = HttpClient.newHttpClient();
             HttpRequest request = HttpRequest.newBuilder()
                     .uri(URI.create(url))
@@ -27,4 +29,5 @@ public class ApiConsuption {
         }
 
     }
+
 
